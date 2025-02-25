@@ -1,0 +1,49 @@
+@media screen and (width <= 540px){
+    .principal {
+        width: 75vw;
+        font-size: .8rem;
+    }
+
+    .conteudo__titulo {
+        font-size: 2rem;
+    }
+
+    .conteudo__adicionar{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: center;
+    }
+
+    .conteudo__adicionar > input {
+        width: 200px;
+    }
+
+    .lista__dia {
+        width: 80px;
+    }
+
+    .container__item {
+        gap: 1rem;
+        width: 200px;
+    }
+}
+
+@media screen and (width <= 340px) {
+    .principal {
+        width: 90vw;
+    }
+
+    .container__item{
+        width: 150px;
+    }
+}
+
+@media screen and (width <= 280px) {
+    .principal {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        margin: 0;
+    }
+}

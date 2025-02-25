@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-azul-escuro: #2b2d42;
+    --cor-cinza: #8d99ae;
+    --cor-branco-azulado: #edf2f4;
+    --cor-azul-claro: #b0c2ca;
+    --cor-azul: #424277;
+
+    --fonte: 'Poppins', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: var(--fonte);
+    background-color: var(--cor-cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-azul-escuro);
+}
+
+.principal {
+    background-color: var(--cor-branco-azulado);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--cor-azul);
+    margin: 2rem 0;
+}
+
+.principal__data-hora {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+
+.principal__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin: auto;
+}
+
+.conteudo__titulo {
+    font-size: 4.5rem;
+    text-shadow: 1px 1px 2px var(--cor-azul-escuro);
+}
+
+.conteudo__adicionar > input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--cor-azul-escuro);
+    background-color: var(--cor-azul-claro);
+    margin-bottom: 1rem;
+}
+
+.conteudo__adicionar > input::placeholder {
+    color: var(--cor-azul-escuro);
+    padding: .2rem;
+}
+
+.adicionar__botao {
+    height: 30px;
+    background-color: var(--cor-azul);
+    border: none;
+    border-radius: 5px;
+    color: var(--cor-branco-azulado);
+    transition: background-color .5s ease;
+}
+
+.adicionar__botao:hover {
+    background-color: var(--cor-azul-escuro);
+    cursor: pointer;
+}
+
+.conteudo__lista {
+    text-align: left;
+}
+
+.lista__dia {
+    font-weight: bold;
+    margin-top: 1rem;
+    border-bottom: 2px solid var(--cor-azul-escuro);
+    width: 95px;
+}
+
+.lista__container, .container__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .3rem 0;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.container__item{
+    background-color: var(--cor-azul-claro);
+    padding: .3rem;
+    width: 380px;
+}   
+
+.container__item > label.tachado{
+    text-decoration: line-through;
+    color: var(--cor-cinza);
+}   
+
+.container__hora {
+    background-color: var(--cor-azul-claro);
+    padding: .55rem;
+    border-radius: 5px;
+}
+
+.conteudo__tachar-todos {
+    background-color: var(--cor-azul-escuro);
+    color: white;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
