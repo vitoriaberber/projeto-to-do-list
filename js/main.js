@@ -75,6 +75,7 @@ botaoAdicionar.addEventListener('click', () => {
 
     checkbox.addEventListener('change', () => {
         label.classList.toggle('tachado');
+        atualizarTextoBotaoTachar();
     });
 
     imgLixeira.addEventListener('click', () => {
